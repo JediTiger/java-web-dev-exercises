@@ -1,6 +1,7 @@
 package OneB;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ArrayListPractice {
 // Part 1b
@@ -18,10 +19,9 @@ public class ArrayListPractice {
     }
 
     static void printSpecificWords(Integer searchText) {
-        String phrase = "Little fuzzy was a bear. Little fuzzy was a pear. Little fuzzy was a mare. Little fuzzy had no care.";
-        String[] phraseArr = phrase.split(" ");
-        System.out.println(phraseArr);
-        for ( String item : phraseArr ) {
+        ArrayList<String> phraseWords = new ArrayList<>(["Little", "fuzzy", "was", "a", "bear", "pear", "mare", "care"]);
+        phraseWords = ["Little", "fuzzy", "was", "a", "bear", "pear", "mare", "care"];
+        for ( String item : phraseWords ) {
             if (item.length() == searchText) {
                 System.out.println(item);
             }
@@ -37,8 +37,15 @@ public class ArrayListPractice {
         System.out.println("The values used for computation are: " + values);
 
         System.out.println("The total of the even integers is: " + sumEvenValues(values));
-
+// Part 2
         printSpecificWords(5);
+// Part 3
+        Scanner input = new Scanner(System.in);
+        System.out.println("What length of word to search for?");
+        int length = input.nextInt();
+        printSpecificWords(length);
+// Part 4
+        //
    }
 
 }
