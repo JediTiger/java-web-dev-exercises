@@ -1,6 +1,8 @@
 package OneB;
 
 public class ArrayPractice {
+    public static String text = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
+
     public static void main(String[] args) {
         int[] integerArray = {1, 1, 2, 3, 5, 8};
 // Part 1
@@ -18,7 +20,6 @@ public class ArrayPractice {
         }
 // Part 3
         System.out.println("\nPart 3 - Split a text string into words");
-        String text = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
         String[] words = text.split(" ");
 // Part 4
         System.out.println("\nPart 4 - Print the string to confirm the phrase was split into words");
