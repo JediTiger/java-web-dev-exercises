@@ -16,7 +16,7 @@ public class Computer {
     }
 
     // Constructor(s)
-    protected Computer(String brand, String os, int serialNum) {
+    public Computer(String brand, String os, int serialNum) {
         this.brand = brand;
         this.os = os;
         this.serialNum = serialNum;
