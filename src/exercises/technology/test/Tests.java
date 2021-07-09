@@ -17,15 +17,17 @@ public class Tests {
 // Computer test 1 - Battery power of computer set correctly
     @Test
     public void checkPowerCorrect() {
-        assertEquals(false, Computer.getPower());
+        assertEquals(false, myComputer.getPower());
     }
+    // Computer test 2 - OS correctly set
+    @Test
+    public void checkBrandCorrect() {
+        assertEquals("Mac", myComputer.getBrand());
+    }
+    // Computer test 3 - Battery power of computer set correctly
     @Test
     public void checkOsCorrect() {
-        assertEquals("Mac", Computer.getBrand());
-    }
-    @Test
-    public void inheritsSuperInFirstConstructor() {
-        assertEquals("14.2.3", Computer.getOs());
+        assertEquals("14.2.3", myComputer.getOs());
     }
 
 }
