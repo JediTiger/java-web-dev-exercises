@@ -11,7 +11,7 @@ public class Computer {
 
     @Override
     public String toString() {
-        String label = "Brand: " + brand + "OS: " + os + "Has battery: " + power + ", Serial Number: " + serialNum;
+        String label = "Brand: " + brand + "OS: " + os + ", Battery?: " + power + ", Serial Number: " + serialNum;
         return label;
     }
 
@@ -23,15 +23,15 @@ public class Computer {
     }
 
     // Getters and Setters
-    public String getBrand() {
+    public static String getBrand() {
         return brand;
     }
 
-    public void setBrand(String aBrand) {
+    public static void setBrand(String aBrand) {
         brand = aBrand;
     }
 
-    public String getOs() {
+    public static String getOs() {
         return os;
     }
 
@@ -39,7 +39,7 @@ public class Computer {
         os = aOs;
     }
 
-    public boolean getPower() {
+    public static boolean getPower() {
         return power;
     }
 
