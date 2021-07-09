@@ -8,9 +8,10 @@ public class Computer {
     private static int power;
     private static String internet;
     private static int serialNum;
+    protected static int assignedSerialNum = 0;
 
     // Constructor(s)
-    private static void Computer(String brand, String os, int power, String internet, int serialNum) {
+    public Computer(String brand, String os, int power, String internet, int serialNum) {
         this.brand = brand;
         this.os = os;
         this.power = power;
@@ -31,7 +32,7 @@ public class Computer {
         return os;
     }
 
-    public void setOs(String os) {
+    public void setOs(String aOs) {
         os = aOs;
     }
 
@@ -51,31 +52,44 @@ public class Computer {
         internet = aInternet;
     }
 
-    public String getSerialNum() {
-        return serialNum
+    private int getSerialNum() {
+        return serialNum;
     }
 
     public void setSerialNum(int aSerialNum) {
         serialNum = aSerialNum;
     }
 
-    /**** Instance Methods ****/
+    /* Instance methods */
 
-    // A cat is rested and hungry after it sleeps
-    public void sleep() {
-        tired = false;
-        hungry = true;
+    // Correct internet label if not a single value string
+    public void fixInternetLabel() {
+        if (internet == "dual") {
+            internet = "Ethernet and Wifi";
+        }
     }
-
-    // Eating makes a cat not hungry
-    public void eat() {
-
-        // eating when not hungry makes a cat sleepy
-        if (!hungry) {
-            tired = true;
+    // Assign a new item a unique serial number
+    public int assignSerialNum() {
+        return assignedSerialNum = assignedSerialNum + 1;
         }
 
-        hungry = false;
+
+    // For items with battery power, get the charge status
+    public String getBatteryCharge(int power) {
+        String charge;
+        if (power == 100) {
+            charge = "Fully charged";
+        }
+        else if (power < 100 && power > 69) {
+            charge = "Good";
+        }
+        else if (power <=69 && power > 39) {
+            charge = "Ok";
+        }
+        else {
+            charge = "Poor";
+        }
+        return charge;
     }
 
 }
