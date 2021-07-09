@@ -1,6 +1,6 @@
 package org.launchcode.java.demos.lsn3classes1;
 
-public class Teachers {
+public class Teacher {
 
     private String lastName;
     private String firstName;
