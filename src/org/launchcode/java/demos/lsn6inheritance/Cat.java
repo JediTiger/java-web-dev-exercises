@@ -65,8 +65,6 @@ public abstract class Cat {
 
         hungry = false;
     }
+    public abstract String noise();
 
-    public String noise () {
-        return "Meeeeeeooooowww!";
-    }
 }
