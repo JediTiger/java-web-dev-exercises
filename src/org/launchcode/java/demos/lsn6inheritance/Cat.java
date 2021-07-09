@@ -1,6 +1,6 @@
 package org.launchcode.java.demos.lsn6inheritance;
 
-public abstract class Cat {
+public class Cat {
 
     private boolean tired = false;
     private boolean hungry = false;
@@ -65,6 +65,6 @@ public abstract class Cat {
 
         hungry = false;
     }
-    public abstract String noise();
+    public String noise() { return "Meow!";}
 
 }

@@ -10,7 +10,6 @@ public class Main {
         System.out.println(spike.getWeight());   // prints 13
 
         Cat steve = new Cat(10);
-        );
 
     }
 
