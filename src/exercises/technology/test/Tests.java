@@ -10,9 +10,9 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 public class Tests {
-    Computer myComputer = new Computer(Computer.setBrand("Mac"), "11.3.2", Computer.assignSerialNum());
-    Laptop myLaptop = new Laptop(Laptop.setBrand("Windows"), "10.123.434355", Computer.assignSerialNum());
-    SmartPhone myPhone = new SmartPhone(SmartPhone.setBrand("Apple"),"14.2.3",Computer.assignSerialNum());
+    Computer myComputer = new Computer("Mac", "11.3.2", Computer.assignSerialNum());
+    Laptop myLaptop = new Laptop("Windows", "10.123.434355", Computer.assignSerialNum());
+    SmartPhone myPhone = new SmartPhone("Apple"),"14.2.3",Computer.assignSerialNum());
 
 // Computer test 1 - Battery power of computer set correctly
     @Test
