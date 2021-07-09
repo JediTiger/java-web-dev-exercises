@@ -10,8 +10,14 @@ public class Computer {
     private static int serialNum;
     protected static int assignedSerialNum = 0;
 
+    @Override
+    public String toString() {
+        String label = "Brand: " + brand + ", OS: " + os + ", Power status: " + getBatteryCharge(power) + ", Internet: " + fixInternetLabel() + ", Serial Number: " + serialNum;
+        return label;
+    }
+
     // Constructor(s)
-    public Computer(String brand, String os, int power, String internet, int serialNum) {
+    protected Computer(String brand, String os, int power, String internet, int serialNum) {
         this.brand = brand;
         this.os = os;
         this.power = power;
@@ -69,7 +75,7 @@ public class Computer {
         }
     }
     // Assign a new item a unique serial number
-    public int assignSerialNum() {
+    public static int assignSerialNum() {
         return assignedSerialNum = assignedSerialNum + 1;
         }
 

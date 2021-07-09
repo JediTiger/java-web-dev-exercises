@@ -7,6 +7,7 @@ import exercises.technology.SmartPhone;
 public class Program {
     public static void main(String[] args) {
 
-        Computer myComputer = new Computer("Mac","11.3.2", )
+        Computer myComputer = new Computer("Mac","11.3.2",100,"dual",Computer.assignSerialNum());
+        System.out.print((myComputer.toString()));
     }
 }
