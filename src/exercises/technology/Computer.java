@@ -3,25 +3,37 @@ package exercises.technology;
 public class Computer {
 
     // Declarations
+    private static String brand;
     private static String os;
-    private static boolean power;
+    private static String power;
     private static int serialNum;
     protected static int assignedSerialNum = 0;
 
     @Override
     public String toString() {
-        String label = "OS: " + os + ", Has battery: " + power + ", Serial Number: " + serialNum;
+        if (this.power != null) {
+            String powerThing = "Has battery: true";
+        }
+        String label = "Brand: " + brand + "OS: " + os + powerThing + ", Serial Number: " + serialNum;
         return label;
     }
 
     // Constructor(s)
-    protected Computer(String os, boolean power, int serialNum) {
+    protected Computer(String brand, String os, int serialNum) {
+        this.brand = brand;
         this.os = os;
-        this.power = power;
         this.serialNum = serialNum;
     }
 
     // Getters and Setters
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String aBrand) {
+        brand = aBrand;
+    }
+
     public String getOs() {
         return os;
     }

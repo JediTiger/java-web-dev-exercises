@@ -6,8 +6,13 @@ import exercises.technology.SmartPhone;
 
 public class Program {
     public static void main(String[] args) {
+        Computer myComputer = new Computer("Mac",false,Computer.assignSerialNum());
+        System.out.print(myComputer.toString());
 
-        Computer myComputer = new Computer("Mac",false,100);
+        Laptop myComputer = new Computer("Mac",false,Computer.assignSerialNum());
+        System.out.print(myComputer.toString());
+
+        Computer myComputer = new Computer("Mac",false,Computer.assignSerialNum());
         System.out.print(myComputer.toString());
     }
 }
