@@ -1,7 +1,15 @@
 package org.launchcode.java.demos.lsn3classes1;
 
+import java.util.*;
+
 public class SchoolPractice {
-    public static void main(String[] args) {
-        // Instantiate your Student class for part 2 here!
+    private static Object Student;
+
+    private static void main(String[] args) {
+
+        Student students = new Student("Sean", 1, 1, 4.0);
+        System.out.println(students);
+
+        System.out.println(students.getNumberOfCredits());
     }
 }

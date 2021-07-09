@@ -37,4 +37,12 @@ public class Student {
     private void setID(int aStudentId) {
         studentId = aStudentId;
     }
+
+    public int getNumberOfCredits() {
+        return numberOfCredits;
+    }
+
+    public void setNumberOfCredits(int aNumberOfCredits) {
+        numberOfCredits = aNumberOfCredits;
+    }
 }
