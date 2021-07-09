@@ -13,6 +13,10 @@ public class HouseCat extends Cat {
         return !isHungry() && !isTired();
     }
 
+    public HouseCat(String aName) {
+        name = aName;
+    }
+
     @Override
     public String noise() {
         return "Hello, my name is " + name + "!";

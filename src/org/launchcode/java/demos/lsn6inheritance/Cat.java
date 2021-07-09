@@ -6,6 +6,10 @@ public class Cat {
     private boolean hungry = false;
     private double weight;
 
+    public Cat () {
+        weight = 13;
+    }
+
     // The biological family for all cat species
     private String family = "Felidae";
 
