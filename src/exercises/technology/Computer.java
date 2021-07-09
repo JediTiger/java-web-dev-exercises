@@ -7,12 +7,15 @@ public class Computer {
     private static String os;
     private static int power;
     private static String internet;
+    private static int serialNum;
 
     // Constructor(s)
-    private static void Computer() {
+    private static void Computer(String brand, String os, int power, String internet, int serialNum) {
         this.brand = brand;
         this.os = os;
         this.power = power;
+        this.internet = internet;
+        this.serialNum = serialNum;
     }
 
     // Getters and Setters
@@ -44,12 +47,16 @@ public class Computer {
         return internet;
     }
 
-    public void setInternet(String internet) {
-        this.internet = internet;
+    public void setInternet(String aInternet) {
+        internet = aInternet;
     }
 
-    public Cat () {
-        weight = 13;
+    public String getSerialNum() {
+        return serialNum
+    }
+
+    public void setSerialNum(int aSerialNum) {
+        serialNum = aSerialNum;
     }
 
     /**** Instance Methods ****/
