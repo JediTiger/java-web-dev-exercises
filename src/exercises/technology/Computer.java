@@ -5,16 +5,13 @@ public class Computer {
     // Declarations
     private static String brand;
     private static String os;
-    private static String power;
+    private static boolean power = false;
     private static int serialNum;
     protected static int assignedSerialNum = 0;
 
     @Override
     public String toString() {
-        if (this.power != null) {
-            String powerThing = "Has battery: true";
-        }
-        String label = "Brand: " + brand + "OS: " + os + powerThing + ", Serial Number: " + serialNum;
+        String label = "Brand: " + brand + "OS: " + os + "Has battery: " + power + ", Serial Number: " + serialNum;
         return label;
     }
 
