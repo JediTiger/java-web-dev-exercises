@@ -19,12 +19,12 @@ public class Tests {
     public void checkPowerCorrect() {
         assertEquals(false, myComputer.getPower());
     }
-    // Computer test 2 - OS correctly set
+// Computer test 2 - OS correctly set
     @Test
     public void checkBrandCorrect() {
         assertEquals("Mac", myComputer.getBrand());
     }
-    // Computer test 3 - Battery power of computer set correctly
+// Computer test 3 - Battery power of computer set correctly
     @Test
     public void checkOsCorrect() {
         assertEquals("14.2.3", myComputer.getOs());
