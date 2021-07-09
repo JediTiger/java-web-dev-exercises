@@ -47,7 +47,7 @@ public class Computer {
         power = aPower;
     }
 
-    private int getSerialNum() {
+    public int getSerialNum() {
         return serialNum;
     }
 
