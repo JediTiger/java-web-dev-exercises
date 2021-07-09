@@ -1,7 +1,7 @@
 package exercises.technology;
 
 public class Laptop extends Computer {
-    protected Laptop(String os, boolean power, int serialNum) {
-        super(os, power, serialNum);
+    protected Laptop(String brand, String os, int serialNum) {
+        super(brand, os, serialNum);
     }
 }
