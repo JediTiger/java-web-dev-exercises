@@ -9,6 +9,9 @@ public class Main {
         HouseCat spike = new HouseCat("Spike");
         System.out.println(spike.getWeight());   // prints 13
 
+        Cat steve = new Cat(10);
+        );
+
     }
 
 
