@@ -2,7 +2,10 @@ package org.launchcode.java.demos.lsn5unittesting.test;
 
 import org.junit.Test;
 import org.junit.Before;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.launchcode.java.demos.lsn5unittesting.main.Car;
 
 public class CarTest {
@@ -33,11 +36,14 @@ public class CarTest {
     //TODO: gasTankLevel is accurate after attempting to drive past tank range
     @Test
     public void testGasTankAfterExceedingTankRange() {
-        int duh = test_car.drive(500);
-        System.out.println();
-//        assertEquals(10, test_car.getGasTankLevel(), .001);
+        test_car.drive(500);
+        assertEquals(test_car.getGasTankLevel(), 0,.001);
     }
 
     //TODO: can't have more gas than tank size, expect an exception
-
+    @Test(expected = IllegalArgumentException.class)
+    public void testGasOverfillException() {
+        test_car.addGas(5);
+        fail("Shouldn't get here, car cannot have more gas in tank than the size of the tank");
+    }
 }
