@@ -9,7 +9,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class Tests {
-    Computer myTestComputer = new Computer("Mac", "11.3.2", Computer.assignSerialNum());
+    Computer myTestComputer = new Computer("Mac", "11.3.2", 101);
 
 // Computer test 1 - Battery power of computer set correctly
     @Test
@@ -29,7 +29,7 @@ public class Tests {
         assertEquals("11.3.2", myTestComputer.getOs());
     }
 
-    Laptop myTestLaptop = new Laptop("Windows", "10.123.434355", Laptop.assignSerialNum());
+    Laptop myTestLaptop = new Laptop("Windows", "10.123.434355", 201);
 
     // Laptop test 1 - Battery power of computer set correctly
     @Test
@@ -47,7 +47,7 @@ public class Tests {
         assertEquals("10.123.434355", myTestLaptop.getOs());
     }
 
-    SmartPhone myTestPhone = new SmartPhone("Apple","14.2.3", SmartPhone.assignSerialNum());
+    SmartPhone myTestPhone = new SmartPhone("Apple","14.2.3", 301);
 
     // Phone test 1 - Battery power of computer set correctly
     @Test
