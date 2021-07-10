@@ -11,8 +11,8 @@ import static org.junit.Assert.assertEquals;
 
 public class Tests {
     Computer myComputer = new Computer("Mac", "11.3.2", Computer.assignSerialNum());
-    Laptop myLaptop = new Laptop("Windows", "10.123.434355", Computer.assignSerialNum());
-    SmartPhone myPhone = new SmartPhone("Apple","14.2.3",Computer.assignSerialNum());
+    Laptop myLaptop = new Laptop("Windows", "10.123.434355", Laptop.assignSerialNum());
+    SmartPhone myPhone = new SmartPhone("Apple","14.2.3",SmartPhone.assignSerialNum());
 
 // Computer test 1 - Battery power of computer set correctly
     @Test
@@ -64,10 +64,10 @@ public class Tests {
 
     // Total test 1 - Check that item serial numbers don't match
     @Test
-    public void checkPhoneOsCorrect() {
-        boolean compSerial = myComputer.getSerialNum();
-        boolean laptopSerial = myComputer.getSerialNum();
-        boolean phoneSerial = myComputer.getSerialNum();
+    public void checkSerialNumbersDontMatch() {
+        int compSerial = myComputer.getSerialNum();
+        int laptopSerial = myLaptop.getSerialNum();
+        int phoneSerial = myPhone.getSerialNum();
         boolean checkSerial = compSerial != laptopSerial && laptopSerial != phoneSerial && phoneSerial != compSerial;
 
         assertEquals(false, checkSerial);
