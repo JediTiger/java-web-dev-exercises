@@ -71,10 +71,16 @@ public class Tests {
         int compSerial = myTestComputer.getSerialNum();
         int laptopSerial = myTestLaptop.getSerialNum();
         int phoneSerial = myTestPhone.getSerialNum();
-        boolean checkSerial = compSerial.equals(laptopSerial) && laptopSerial != phoneSerial && phoneSerial != compSerial;
+        boolean check1 = compSerial != laptopSerial;
+        boolean check2 = laptopSerial != phoneSerial;
+        boolean check3 = phoneSerial != compSerial;
+        boolean checkSerial = check1 && check2 && check3;
         System.out.println(compSerial);
         System.out.println(laptopSerial);
         System.out.println(phoneSerial);
+        System.out.println(check1);
+        System.out.println(check2);
+        System.out.println(check3);
         System.out.println(checkSerial);
 
         assertFalse(checkSerial);

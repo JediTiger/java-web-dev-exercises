@@ -5,7 +5,7 @@ public class Computer {
     // Declarations
     private static String brand;
     private static String os;
-    private static boolean power = false;
+    protected static boolean power = false;
     private static int serialNum;
     protected static int assignedSerialNum = 1;
 
