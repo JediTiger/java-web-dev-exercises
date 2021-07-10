@@ -7,10 +7,10 @@ public class Computer {
     private static String os;
     private static boolean power = false;
     private static int serialNum;
-    protected static int assignedSerialNum = 0;
+    protected static int assignedSerialNum = 1;
 
     @Override
-    public String toString() {
+    public static String toString() {
         String label = "Brand: " + brand + "OS: " + os + ", Battery?: " + power + ", Serial Number: " + serialNum;
         return label;
     }
@@ -59,7 +59,7 @@ public class Computer {
 
     // Assign a new item a unique serial number
     public static int assignSerialNum() {
-        return assignedSerialNum = assignedSerialNum + 1;
+        return assignedSerialNum = assignedSerialNum + 100;
     }
 
 }
