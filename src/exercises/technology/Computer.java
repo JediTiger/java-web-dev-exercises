@@ -27,11 +27,11 @@ public class Computer {
         return brand;
     }
 
-    public static void setBrand(String aBrand) {
+    public void setBrand(String aBrand) {
         brand = aBrand;
     }
 
-    public static String getOs() {
+    public String getOs() {
         return os;
     }
 
@@ -39,7 +39,7 @@ public class Computer {
         os = aOs;
     }
 
-    public static boolean getPower() {
+    public boolean getPower() {
         return power;
     }
 
