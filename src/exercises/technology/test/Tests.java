@@ -4,10 +4,9 @@ import exercises.technology.Computer;
 import exercises.technology.Laptop;
 import exercises.technology.SmartPhone;
 
-import java.util.*;
 import org.junit.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class Tests {
     Computer myComputer = new Computer("Mac", "11.3.2", Computer.assignSerialNum());
@@ -17,7 +16,7 @@ public class Tests {
 // Computer test 1 - Battery power of computer set correctly
     @Test
     public void checkComputerPowerCorrect() {
-        assertEquals(false, myComputer.getPower());
+        assertFalse(myComputer.getPower());
     }
 // Computer test 2 - OS correctly set
     @Test
@@ -27,13 +26,13 @@ public class Tests {
 // Computer test 3 - Battery power of computer set correctly
     @Test
     public void checkComputerOsCorrect() {
-        assertEquals("14.2.3", myComputer.getOs());
+        assertEquals("11.3.2", myComputer.getOs());
     }
 
 // Laptop test 1 - Battery power of computer set correctly
     @Test
     public void checkLaptopPowerCorrect() {
-        assertEquals(false, myLaptop.getPower());
+        assertTrue(myLaptop.getPower());
     }
 // Laptop test 2 - OS correctly set
     @Test
@@ -49,7 +48,7 @@ public class Tests {
     // Laptop test 1 - Battery power of computer set correctly
     @Test
     public void checkPhonePowerCorrect() {
-        assertEquals(false, myPhone.getPower());
+        assertTrue(myPhone.getPower());
     }
     // Laptop test 2 - OS correctly set
     @Test
@@ -70,6 +69,6 @@ public class Tests {
         int phoneSerial = myPhone.getSerialNum();
         boolean checkSerial = compSerial != laptopSerial && laptopSerial != phoneSerial && phoneSerial != compSerial;
 
-        assertEquals(false, checkSerial);
+        assertFalse(checkSerial);
     }
 }
