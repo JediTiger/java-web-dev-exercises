@@ -10,7 +10,7 @@ public class Computer {
     protected static int assignedSerialNum = 1;
 
     @Override
-    public static String toString() {
+    public String toString() {
         String label = "Brand: " + brand + "OS: " + os + ", Battery?: " + power + ", Serial Number: " + serialNum;
         return label;
     }

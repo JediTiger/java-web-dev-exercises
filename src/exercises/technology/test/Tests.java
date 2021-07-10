@@ -14,9 +14,9 @@ public class Tests {
 // Computer test 1 - Battery power of computer set correctly
     @Test
     public void checkComputerPowerCorrect() {
-        System.out.println(Computer.getPower());
-        System.out.println(Computer.toString());
-        assertFalse(Computer.getPower());
+        System.out.println(myTestComputer.getPower());
+        System.out.println(myTestComputer.toString());
+        assertFalse(myTestComputer.getPower());
     }
 // Computer test 2 - OS correctly set
     @Test
