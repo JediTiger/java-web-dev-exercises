@@ -2,27 +2,28 @@ package exercises.technology;
 
 public class Computer {
 
-    // Declarations
+// Declarations
     private static String brand;
     private static String os;
     protected static boolean power = false;
     private static int serialNum;
     protected static int assignedSerialNum = 1;
 
+// Overrides
     @Override
     public String toString() {
         String label = "Brand: " + brand + "OS: " + os + ", Battery?: " + power + ", Serial Number: " + serialNum;
         return label;
     }
 
-    // Constructor(s)
+// Constructor(s)
     public Computer(String brand, String os, int serialNum) {
         this.brand = brand;
         this.os = os;
         this.serialNum = serialNum;
     }
 
-    // Getters and Setters
+// Getters and Setters
     public static String getBrand() {
         return brand;
     }
@@ -55,9 +56,9 @@ public class Computer {
         serialNum = aSerialNum;
     }
 
-    /* Instance methods */
+/* Instance methods */
 
-    // Assign a new item a unique serial number
+// Assign a new item a unique serial number
     public static int assignSerialNum() {
         return assignedSerialNum = assignedSerialNum + 100;
     }
