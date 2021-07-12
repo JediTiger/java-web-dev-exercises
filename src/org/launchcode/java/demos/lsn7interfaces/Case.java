@@ -47,9 +47,6 @@ public class Case {
 
     @Override
     public String toString() {
-        return "Case{" +
-                "flavors=" + flavors +
-                ", cones=" + cones +
-                '}';
+        return "flavors=" + flavors +", cones=" + cones;
     }
 }

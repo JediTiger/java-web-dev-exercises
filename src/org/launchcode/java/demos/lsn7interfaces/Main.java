@@ -36,10 +36,10 @@ public class Main {
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
 
         System.out.println("\nFlavors (after sort):");
-        System.out.println(flavors.toString());
+        System.out.println(flavors);
 
         System.out.println("\nCones (after sort):");
-        System.out.println(cones.toString());
+        System.out.println(cones);
 
     }
 }
