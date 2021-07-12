@@ -10,7 +10,11 @@ public class Main {
 
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
-
+        public static void main(String[] args) {
+            Case menu = new Case();
+            ArrayList<Flavor> flavors = menu.getFlavors();
+            ArrayList<Cone> cones = menu.getCones();
+        }
         // TODO: Use a Comparator class to sort the 'cones' array in increasing order by the 'cost'
         //  field.
 
