@@ -2,6 +2,7 @@ package org.launchcode.java.demos.lsn7interfaces;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import org.launchcode.java.demos.lsn7interfaces.Flavor;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,5 +40,6 @@ public class Main {
 
         System.out.println("\nCones (after sort):");
         System.out.println(cones.toString());
+
     }
 }
