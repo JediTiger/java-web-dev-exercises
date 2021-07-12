@@ -9,9 +9,6 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
-        System.out.println("\nFlavors before sort");
-        System.out.println(flavors);
-
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
 
@@ -36,5 +33,11 @@ public class Main {
         System.out.println(cones);
 
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
+
+        System.out.println("\nFlavors (after sort):");
+        System.out.println(flavors.toString());
+
+        System.out.println("\nCones (after sort):");
+        System.out.println(cones.toString());
     }
 }

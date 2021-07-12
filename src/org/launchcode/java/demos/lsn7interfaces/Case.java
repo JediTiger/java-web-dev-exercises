@@ -44,4 +44,12 @@ public class Case {
     public void setCones(ArrayList<Cone> cones) {
         this.cones = cones;
     }
+
+    @Override
+    public String toString() {
+        return "Case{" +
+                "flavors=" + flavors +
+                ", cones=" + cones +
+                '}';
+    }
 }
